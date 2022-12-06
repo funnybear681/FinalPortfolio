@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import BerkshireHathawayRedesign from './components/BerkshireHathawayRedesign';
+import GOT from './components/GOT'
+import Header from './components/Header.js'
+import JerseyStore from './components/JerseyStore';
+import Navigation from './components/Navigation.js'
+import PortfolioItem from './components/PortfolioItem.js'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation></Navigation>
+      <Header></Header>
+      <BerkshireHathawayRedesign parity="even"></BerkshireHathawayRedesign>
+      <GOT parity="odd"></GOT>
+      <JerseyStore parity="even"></JerseyStore>
     </div>
   );
 }
