@@ -5,15 +5,15 @@ import Header from './components/Header.js'
 import JerseyStore from './components/JerseyStore';
 import Navigation from './components/Navigation.js'
 import PortfolioItem from './components/PortfolioItem.js'
+import Projects from './components/Projects';
 
 function App() {
   return (
     <div className="App">
       <Navigation></Navigation>
       <Header></Header>
-      <BerkshireHathawayRedesign parity="even"></BerkshireHathawayRedesign>
-      <GOT parity="odd"></GOT>
-      <JerseyStore parity="even"></JerseyStore>
+      <Projects></Projects>
+
     </div>
   );
 }

@@ -1,6 +1,17 @@
 import got from '../images/CS1410.png'
+import {useState} from 'react';
+
 function GOT(props) {
     const {parity} = props;
+    const [isHovering, setIsHovering] = useState(false);
+    
+    const handleMouseOver = () => {
+        setIsHovering(true);
+    };
+    
+    const handleMouseOut = () => {
+        setIsHovering(false);
+    };
 
     return (  
         <div className={parity}>
@@ -17,7 +28,10 @@ function GOT(props) {
                     </div>
                 </div>
             </div>
-            <img className="info-image" src={got}></img>
+            <div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+                <img className="info-image" src={got}></img>
+                {isHovering && <h2>Hello World</h2>}
+            </div>
         </div>
     );  
   }

@@ -1,4 +1,5 @@
-import berkshire from '../images/BerkshireHathaway.png'
+
+/*
 function BerkshireHathawayRedesign(props) {
     const {parity} = props;
 
@@ -25,3 +26,4 @@ function BerkshireHathawayRedesign(props) {
   }
   
   export default BerkshireHathawayRedesign;
+  */
