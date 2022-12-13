@@ -5,7 +5,7 @@ import { skills } from "../data";
 export default function Skills() {
   return (
     <section id="skills">
-      <div className="px-5 py-10 mx-auto text-gray-400 bg-gray-100 body-font">
+      <div className="px-5 py-10 mx-auto text-gray-400 bg-white body-font">
         <div className="text-center mb-20">
           <h1 className="sm:text-4xl text-3xl font-medium title-font text-black mb-4">
             Skills &amp; Technologies
